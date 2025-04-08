@@ -48,4 +48,24 @@ Pegasus、T5 (FLAN-T5)、或 BART 都是最常見的「摘要三巨頭」
 
 Gemma3、Qwen 2.5
 
+## 模型訓練(微調)
 
+### 1. Load the Pegasus-X model and tokenizer
+
+### 2. Load the datasets with cleaning
+
+### 3. 從兩端截斷 + 語義重要性選擇(因為長文本限制)
+
+### 4. Fine-tune the model with checkpoint saving
+
+### 5. 後處理函數：清理生成的摘要(刪除一些重複、亂碼字眼)
+
+
+## 模型推理
+
+### 1. 先做文字清洗(資料前處理)
+
+
+### 2. 先利用訓練好的 **PEGASUS-Large** 去生成第一版模型。
+
+### 3. 再利用 **BERT-Large** 去做優化。
