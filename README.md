@@ -17,7 +17,7 @@
 **Questions**
 In this homework, we aim to generate paper abstracts from paper introduction bodies. You should try to improve the quality of generated abstract to increase the performance.
 
-![Task Overvirw](Task Overvirw.png)
+![Task Overvirw](TaskOvervirw.png)
 
 ## Dataset Description
 -  **train.json**: a text file with **408** json lines, where each line represents an individual row of data as follows: **paper_id**: the index of paper. **introduction**: parsed paper introduction in string format.** abstract**: parsed paper abstract in string format.
