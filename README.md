@@ -7,10 +7,10 @@
 
 然後透過四個評估指標 
 
-- ROUGE-1
-- ROUGE-2
-- ROUGE-L
-- BertScore-1
+- ROUGE-1 (單詞（unigram）層級的重疊)
+- ROUGE-2 (雙詞（bigram）層級的重疊)
+- ROUGE-L (最長公共子序列（LCS, Longest Common Subsequence）)
+- BertScore-1 (使用語意嵌入（BERT embedding）計算語意相似度)
 
 去達到Baseline的設定。
 
