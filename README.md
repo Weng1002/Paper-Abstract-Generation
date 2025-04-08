@@ -17,6 +17,8 @@
 **Questions**
 In this homework, we aim to generate paper abstracts from paper introduction bodies. You should try to improve the quality of generated abstract to increase the performance.
 
+![Task Overvirw](Task Overvirw.png)
+
 ## Dataset Description
 -  **train.json**: a text file with **408** json lines, where each line represents an individual row of data as follows: **paper_id**: the index of paper. **introduction**: parsed paper introduction in string format.** abstract**: parsed paper abstract in string format.
 
@@ -33,3 +35,17 @@ In this homework, we aim to generate paper abstracts from paper introduction bod
 "In the realm of reinforcement learning and Monte Carlo methods, a formidable challenge looms: the quest to estimate quantities tethered to the stationary distribution of a Markov chain. In the unpredictable landscape of real-world applications, we often find ourselves constrained by a fixed dataset, with no further communion with the environment to glean additional insights. Yet, fear not! We unveil a path forward, demonstrating that consistent estimation is not only feasible but can also yield robust results in critical applications.  Our method hinges on a clever ratio that rectifies the gap between the stationary and empirical distributions, drawing upon the inherent properties of the stationary distribution itself. By deftly employing constraint reformulations grounded in variational divergence minimization, we forge a new algorithm: GenDICE. This approach is not only elegant but also remarkably effective.  We rigorously establish the consistency of our method under broad conditions, accompanied by a comprehensive error analysis that lays bare its strengths. Furthermore, our empirical results shine brightly, showcasing GenDICE's prowess across benchmark tasks, including off-line PageRank and off-policy policy evaluation. In this intricate dance of data and algorithms, we have crafted a tool that promises to illuminate the shadows of uncertainty in estimation."
 
 ## 模型介紹
+我根據 Task Overvirw.png 分兩種路線去實作此任務：
+
+### 1. Traditional Language Models（摘要三巨頭）
+
+Pegasus、T5 (FLAN-T5)、或 BART 都是最常見的「摘要三巨頭」
+
+我使用了 PEGASUS-Large、PEGASUS-ArXiv、LED 、LongT5，然後最後一版是上傳 **PEGASUS-Large** 版本
+
+
+### 2. Large Language Models
+
+Gemma3、Qwen 2.5
+
+
